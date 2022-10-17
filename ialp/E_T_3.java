@@ -15,7 +15,7 @@ public class E_T_3 {
 }
 
 class Coche {
-        public int nPuertas;
+        public int nPuertas = 2;
         
         public void mPuertas (){
             this.nPuertas++;
