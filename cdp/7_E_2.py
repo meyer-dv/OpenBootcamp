@@ -4,14 +4,16 @@ En este segundo ejercicios tendréis que crear un script que nos diga si es la h
 En el caso de que sean más de las 7, se mostrará un mensaje y en caso contrario, haréis una operación para calcular el tiempo que queda de trabajo.
 """
 
-import time
+from time import localtime
 
 def main():
+    hours = localtime().tm_hour
+    minutes = localtime().tm_min
     
-    if time.localtime().tm_hour > 19:
-        print("Es hora de ir a casa")
+    if hours >= 19:
+        print("Es hora de ir a casa.")
     else:
-        print(f"Te quedan {19 - time.localtime().tm_hour} horas de trabajo")
+        print(f"Te quedan {18 - hours} horas y {60 - minutes} minutos de trabajo.")
 
 if __name__ == '__main__':
     main()
