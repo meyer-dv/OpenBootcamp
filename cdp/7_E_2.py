@@ -6,14 +6,16 @@ En el caso de que sean más de las 7, se mostrará un mensaje y en caso contrari
 
 from time import localtime
 
+
 def main():
     hours = localtime().tm_hour
     minutes = localtime().tm_min
-    
+
     if hours >= 19:
         print("Es hora de ir a casa.")
     else:
         print(f"Te quedan {18 - hours} horas y {60 - minutes} minutos de trabajo.")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
