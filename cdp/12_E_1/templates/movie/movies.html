@@ -1,0 +1,16 @@
+{% extends 'layout.html' %} {% block main %} {% for movie in movies %}
+<div class="card">
+  <img src="{{movie.poster}}" alt="{{movie}}" class="card-img-left" />
+  <div class="card-body">
+    <h1>{{ movie }}</h1>
+    <p>IMDb: {{ movie.imdb_rating }}</p>
+    <p>Duración: {{ movie.duration }} min.</p>
+    <p>{{ movie.synopsis }}</p>
+    <p>Fecha de lanzamiento: {{ movie.release_date }}</p>
+    
+    <p>Géneros: {% for genre in movie.genres.all %} {{ genre }} {% endfor %}</p>
+
+  </div>
+</div>
+
+{% endfor %} {% endblock main %}

@@ -1,0 +1,74 @@
+{% extends 'layout.html' %} {% block main %} 
+{% for director in directors %}
+<div class="card">
+  <img
+    src="{{director.picture}}"
+    alt="{{director.first_name}}"
+    class="card-img-left"
+  />
+  <div class="card-body">
+    <h1>{{ director }}</h1>
+    <p>{{ director.birth_date }}</p>
+    <p>{{ director.birth_country }}</p>
+    <p>{{ director.biography }}</p>
+    <p>
+      <a href="{% url 'movies_by_director' director.id %}">Ver películas</a>
+    </p>
+  </div>
+</div>
+{% endfor %} 
+{% for director in directors %}
+<div class="card">
+  <img
+    src="{{director.picture}}"
+    alt="{{director.first_name}}"
+    class="card-img-left"
+  />
+  <div class="card-body">
+    <h1>{{ director }}</h1>
+    <p>{{ director.birth_date }}</p>
+    <p>{{ director.birth_country }}</p>
+    <p>{{ director.biography }}</p>
+    <p>
+      <a href="{% url 'movies_by_director' director.id %}">Ver películas</a>
+    </p>
+  </div>
+</div>
+{% endfor %} 
+{% for director in directors %}
+<div class="card">
+  <img
+    src="{{director.picture}}"
+    alt="{{director.first_name}}"
+    class="card-img-left"
+  />
+  <div class="card-body">
+    <h1>{{ director }}</h1>
+    <p>{{ director.birth_date }}</p>
+    <p>{{ director.birth_country }}</p>
+    <p>{{ director.biography }}</p>
+    <p>
+      <a href="{% url 'movies_by_director' director.id %}">Ver películas</a>
+    </p>
+  </div>
+</div>
+{% endfor %} 
+{% for director in directors %}
+<div class="card">
+  <img
+    src="{{director.picture}}"
+    alt="{{director.first_name}}"
+    class="card-img-left"
+  />
+  <div class="card-body">
+    <h1>{{ director }}</h1>
+    <p>{{ director.birth_date }}</p>
+    <p>{{ director.birth_country }}</p>
+    <p>{{ director.biography }}</p>
+    <p>
+      <a href="{% url 'movies_by_director' director.id %}">Ver películas</a>
+    </p>
+  </div>
+</div>
+{% endfor %} 
+{% endblock main %}
