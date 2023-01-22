@@ -1,12 +1,7 @@
-from django.shortcuts import render
+from django.views.generic import ListView
 from .models import Director
 
 
-def home(request):
-    directors = Director.objects.all()
-
-    context = {
-        "directors": directors,
-    }
-
-    return render(request, "director/index.html", context)
+class home(ListView):
+    model = Director
+    template_name = "director/index.html"

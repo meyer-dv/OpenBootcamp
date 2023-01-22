@@ -1,6 +1,5 @@
 from django.db import models
 from django.core.validators import URLValidator
-from apps.movie.models import Movie
 
 
 class Director(models.Model):
@@ -49,12 +48,6 @@ class Director(models.Model):
         help_text="Información sobre la carrera del director",
         blank=True,
         null=True,
-    )
-
-    movies = models.ManyToManyField(
-        Movie,
-        help_text="Películas",
-        blank=True,
     )
 
     def __str__(self) -> str:
