@@ -47,4 +47,46 @@
   box-shadow: 0 0 10px rgba(136, 136, 136, 0.5333333333);
 }
 
+.feature {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+}
+.feature .icon {
+  color: #0075FF;
+  font-size: 5rem;
+  text-align: center;
+}
+.feature .description .title {
+  text-align: center;
+}
+.feature .description .text {
+  color: #888;
+  text-align: center;
+  inline-size: 280px;
+  overflow-wrap: break-word;
+}
+.feature .cta {
+  color: #0075FF;
+  text-align: center;
+  margin-top: 6rem;
+  inline-size: 270px;
+  overflow-wrap: break-word;
+}
+
+.icon-desc {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-desc .icon {
+  color: #0075FF;
+  font-size: 6rem;
+}
+.icon-desc .title {
+  margin-top: -0.8rem;
+  font-weight: bolder;
+}
+
 /*# sourceMappingURL=style.css.map */
