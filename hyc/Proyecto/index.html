@@ -7,7 +7,7 @@
     <title>Proyecto Final</title>
     <link
       rel="stylesheet"
-      href="static/vendor/bootstrap-5.3.0-alpha1-dist/css/bootstrap-grid.min.css"
+      href="static/vendor/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"  
     />
     <link
       rel="stylesheet"
@@ -16,19 +16,52 @@
     <link rel="stylesheet" href="static/assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="feature">
-        <i class="bi bi-eye-fill icon"></i>
-        <div class="description">
-          <h2 class="title">Secure storage</h2>
-          <p class="text">We store the vast majority of the digital assets in secure offline storage.</p>
-          <p class="cta">Learn how Coinbase keeps your funds safe and secure</p>
+    <div class="nav">
+      <div class="logo">
+        <a href="#">
+          <img src="static/assets/img/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="menu">
+        <div class="main-menu">
+          <li><a href="#">Prices</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Individuals</a></li>
+          <li><a href="#">Bussineses</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Company</a></li>
         </div>
       </div>
+      <div class="get-started">
+        <button class="btn-sec-s">Sign in</button>
+        <button class="btn-main-s">Get started</button>
+      </div>
+    </div>
 
-      <div class="icon-desc">
-        <i class="bi bi-person-plus-fill icon"></i>
-        <div class="title">Create an account</div>
+    <div class="sec-home">
+      <div class="home-cta">
+        <a href="#"
+          >jump start your portfolio
+          <i class="bi bi-arrow-right"></i>
+        </a>
+        <h2 class="home-title">Jump start your crypto portfolio</h2>
+        <p>
+          <b>
+            Coinbase is the easiest place to buy and sell cryptocurrency. Sign
+            up and get started today.
+          </b>
+        </p>
+        <form class="row g-3">
+          <div class="col-auto">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email address">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn-main">Get started</button>
+          </div>
+        </form>
+      </div>
+      <div class="home-img">
+        <img src="static/assets/img/wallet.png" alt="wallet" />
       </div>
     </div>
 

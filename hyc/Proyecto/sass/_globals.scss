@@ -1,0 +1,52 @@
+@use "components";
+
+@mixin set-wrap($len) {
+  inline-size: $len;
+  overflow-wrap: break-word;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  border-bottom: solid #ddd 0.1rem;
+  height: 2.8rem;
+}
+
+.sec-home {
+  display: flex;
+  margin: 6rem 16rem;
+    // max-width: 60rem;
+  .home-cta {
+    flex: 1;
+    a {
+      color: components.$color-main;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      i {
+        -webkit-text-stroke: 1px;
+      }
+    }
+    .home-title {
+      font-size: 4rem;
+      margin-top: 0.7rem;
+      margin-bottom: 1rem;
+      @include set-wrap(25rem);
+    }
+    p {
+      @include set-wrap(25rem);
+    }
+
+    #inputEmail {
+        height: 100%;
+    }
+  }
+}
