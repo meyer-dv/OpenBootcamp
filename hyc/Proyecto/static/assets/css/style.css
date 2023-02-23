@@ -48,37 +48,15 @@
 
 .icon-sm {
   color: #0075ff;
+  text-align: center;
   padding: 0.5rem;
-  width: 1.1rem;
+  width: 2.4rem;
+  height: 2.4rem;
   border-radius: 1.4rem;
   box-shadow: 0 0 10px rgba(136, 136, 136, 0.5333333333);
 }
-
-.feature {
-  width: 18rem;
-  display: flex;
-  flex-direction: column;
-}
-.feature .icon {
-  color: #0075ff;
-  font-size: 5rem;
-  text-align: center;
-}
-.feature .description .title {
-  text-align: center;
-}
-.feature .description .text {
-  color: #888;
-  text-align: center;
-  inline-size: 280px;
-  overflow-wrap: break-word;
-}
-.feature .cta {
-  color: #0075ff;
-  text-align: center;
-  margin-top: 6rem;
-  inline-size: 270px;
-  overflow-wrap: break-word;
+.icon-sm i {
+  -webkit-text-stroke: 1px;
 }
 
 .icon-desc {
@@ -105,7 +83,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   border-bottom: solid #ddd 0.1rem;
   height: 2.8rem;
 }
@@ -140,6 +118,43 @@ body {
 }
 .sec-home .home-cta #inputEmail {
   height: 100%;
+}
+
+.sec-features {
+  margin: 6rem 16rem;
+  display: flex;
+  flex-direction: column;
+}
+.sec-features .intro {
+  text-align: center;
+}
+.sec-features .features {
+  width: 60rem;
+  align-content: center;
+  margin: auto;
+}
+.sec-features .features .text {
+  padding: 2rem 0;
+  flex: 1;
+}
+.sec-features .features .text .feature {
+  display: flex;
+  flex-direction: row;
+}
+.sec-features .features .text .feature .description {
+  margin-left: 1rem;
+}
+.sec-features .features .text .feature .description .description-title {
+  font-size: 1.15rem;
+}
+.sec-features .features .text .feature .description .description-text {
+  font-size: 1rem;
+  color: #888;
+  inline-size: 19rem;
+  overflow-wrap: break-word;
+}
+.sec-features .image img {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

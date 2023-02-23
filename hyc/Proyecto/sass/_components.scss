@@ -58,42 +58,47 @@ $color-main: #0075ff;
 
 .icon-sm {
   color: $color-main;
+  text-align: center;
   padding: 0.5rem;
-  width: 1.1rem;
+  width: 2.4rem;
+  height: 2.4rem;
   border-radius: 1.4rem;
   box-shadow: 0 0 10px #8888;
-}
-
-.feature {
-  width: 18rem;
-  display: flex;
-  flex-direction: column;
-  .icon {
-    color: $color-main;
-    font-size: 5rem;
-    text-align: center;
-  }
-
-  .description {
-    .title {
-      text-align: center;
-    }
-    .text {
-      color: #888;
-      text-align: center;
-      inline-size: 280px;
-      overflow-wrap: break-word;
-    }
-  }
-
-  .cta {
-    color: $color-main;
-    text-align: center;
-    margin-top: 6rem;
-    inline-size: 270px;
-    overflow-wrap: break-word;
+  i {
+    -webkit-text-stroke: 1px;
   }
 }
+
+// .feature {
+//   width: 18rem;
+//   display: flex;
+//   flex-direction: column;
+//   .icon {
+//     color: $color-main;
+//     font-size: 5rem;
+//     text-align: center;
+//   }
+
+//   .description {
+//     .title {
+//       text-align: center;
+//     }
+//     .text {
+//       color: #888;
+//       text-align: center;
+//       inline-size: 280px;
+//       overflow-wrap: break-word;
+//     }
+//   }
+
+//   .cta {
+//     color: $color-main;
+//     text-align: center;
+//     margin-top: 6rem;
+//     inline-size: 270px;
+//     overflow-wrap: break-word;
+//   }
+// }
 
 .icon-desc {
   width: 18rem;
