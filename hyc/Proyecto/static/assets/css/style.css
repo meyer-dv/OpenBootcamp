@@ -59,6 +59,35 @@
   -webkit-text-stroke: 1px;
 }
 
+.benefit {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+}
+.benefit .icon {
+  color: #0075ff;
+  font-size: 5rem;
+  text-align: center;
+}
+.benefit .description .title {
+  text-align: center;
+}
+.benefit .description .text {
+  color: #888;
+  text-align: center;
+  inline-size: 19rem;
+  overflow-wrap: break-word;
+  margin: auto;
+}
+.benefit .cta {
+  color: #0075ff;
+  text-align: center;
+  margin: auto;
+  margin-top: 6rem;
+  inline-size: 270px;
+  overflow-wrap: break-word;
+}
+
 .icon-desc {
   width: 18rem;
   display: flex;
@@ -155,6 +184,17 @@ body {
 }
 .sec-features .image img {
   max-width: 100%;
+}
+
+.sec-benefits {
+  border-top: solid 1px #ddd;
+  margin: 6rem 16rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.sec-benefits .intro {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
