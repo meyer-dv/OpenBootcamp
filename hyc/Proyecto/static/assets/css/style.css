@@ -235,4 +235,19 @@ body {
   margin-top: 6%;
 }
 
+.sec-footer-cta {
+  background-color: #f4f8fe;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.sec-footer-cta .footer-cta {
+  margin: 6rem 16rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  inline-size: 62rem;
+  overflow-wrap: break-word;
+}
+
 /*# sourceMappingURL=style.css.map */

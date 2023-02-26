@@ -135,3 +135,16 @@ body {
     }
   }
 }
+
+
+.sec-footer-cta {
+  background-color: #f4f8fe;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  .footer-cta {
+    @include container();
+    margin-bottom: 0;
+    @include components.set-wrap(62rem);
+  }
+}
