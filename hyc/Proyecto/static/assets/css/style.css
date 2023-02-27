@@ -249,5 +249,84 @@ body {
   inline-size: 62rem;
   overflow-wrap: break-word;
 }
+.sec-footer-cta .footer-cta div {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .sec-home {
+    margin: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-home .home-cta .home-title {
+    font-size: 3rem;
+    inline-size: auto;
+    overflow-wrap: break-word;
+  }
+  .sec-home .home-cta p {
+    inline-size: auto;
+    overflow-wrap: break-word;
+  }
+  .sec-home .home-cta #inputEmail {
+    height: 100%;
+  }
+  .sec-features {
+    margin: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-features .features {
+    width: auto;
+  }
+  .sec-features .features .text .feature .description .description-text {
+    inline-size: auto;
+    overflow-wrap: break-word;
+  }
+  .sec-features .description-text {
+    inline-size: auto;
+    overflow-wrap: break-word;
+  }
+  .sec-benefits {
+    margin: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-benefits .benefit {
+    margin: auto;
+  }
+  .sec-benefits .benefit .cta {
+    margin-top: 1rem;
+  }
+  .sec-onboarding {
+    margin: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-onboarding .steps div {
+    margin: auto;
+  }
+  .sec-footer-cta {
+    background-image: none;
+  }
+  .sec-footer-cta .footer-cta {
+    margin: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    inline-size: auto;
+    overflow-wrap: break-word;
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+  .sec-footer-cta .footer-cta .col-6 {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

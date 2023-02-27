@@ -6,6 +6,12 @@
   flex-direction: column;
 }
 
+@mixin container-md {
+  margin: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -136,7 +142,6 @@ body {
   }
 }
 
-
 .sec-footer-cta {
   background-color: #f4f8fe;
   background-image: url("../img/bg.png");
@@ -144,7 +149,93 @@ body {
   background-position: 100%;
   .footer-cta {
     @include container();
+
+    div {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
     margin-bottom: 0;
     @include components.set-wrap(62rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .sec-home {
+    @include container-md();
+    .home-cta {
+      .home-title {
+        font-size: 3rem;
+        @include components.set-wrap(auto);
+      }
+      p {
+        @include components.set-wrap(auto);
+      }
+
+      #inputEmail {
+        height: 100%;
+      }
+    }
+  }
+
+  .sec-features {
+    @include container-md();
+
+    .features {
+      width: auto;
+
+      .text {
+        .feature {
+          .description {
+            .description-text {
+              @include components.set-wrap(auto);
+            }
+          }
+        }
+      }
+    }
+
+    .description-text {
+      @include components.set-wrap(auto);
+    }
+  }
+
+  .sec-benefits {
+    @include container-md();
+
+    .benefit {
+      margin: auto;
+
+      .cta {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .sec-onboarding {
+    @include container-md();
+
+    .steps {
+      flex-direction: column;
+
+      div {
+        margin: auto;
+      }
+    }
+  }
+
+  .sec-footer-cta {
+    background-image: none;
+    .footer-cta {
+      @include container-md();
+      @include components.set-wrap(auto);
+      margin-bottom: 0;
+      padding: 1rem;
+
+      .col-6 {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
