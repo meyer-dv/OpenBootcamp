@@ -1,4 +1,4 @@
-.docker
-.env
 mysql/*
-log/*/*.log
+.env
+*.log
+*/vendor/*
